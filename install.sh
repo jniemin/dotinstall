@@ -39,6 +39,7 @@ info "Preparing install juise's dotfiles"
 if [ $# -ne 1 ] || [ "$1" != "-y" ];
     then
         user "Make sure your ssh private key is set, otherwise install is not able to download from private repository"
+	user "Make sure you have ZSH installed. sudo apt-get install zsh && chsh -s /bin/zsh <your username here>"
         read key;
 fi
 
