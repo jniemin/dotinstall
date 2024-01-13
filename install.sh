@@ -49,7 +49,8 @@ if test "$(uname)" = "Darwin"
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 		brew install git
   	else
-   		sudo apt-get install git-all
+   		sudo apt-get update
+     		sudo apt-get install git-all
 fi
 info "Cloning dotfiles"
 install_dotdir="$HOME/.dotfiles"
